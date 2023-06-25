@@ -1,5 +1,9 @@
 import 'package:my_app/consts/consts.dart';
 import 'package:my_app/controllers/home_controller.dart';
+import 'package:my_app/views/cart_screen/cart_screen.dart';
+import 'package:my_app/views/category_screen/category_screen.dart';
+import 'package:my_app/views/home_screen/home_screen.dart';
+import 'package:my_app/views/profile_screen/profile_screen.dart';
 
 class Home extends StatelessWidget {
   const Home ({super.key});
@@ -16,10 +20,10 @@ class Home extends StatelessWidget {
     ];
 
     var navBody = [
-      Container(color: Colors.blue),
-      Container(color: Colors.amber),
-      Container(color: Colors.purple),
-      Container(color: Colors.cyan),
+      const HomeScreen(),
+      const CategoryScreen(),
+      const ProfileScreen(),
+      const CartScreen(),
     ];
     return Scaffold(
       body: Column(

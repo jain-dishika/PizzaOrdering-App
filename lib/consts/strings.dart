@@ -8,12 +8,13 @@ const emailHint = "admin@admin.com";
 const password = "Password";
 const passwordHint = "******";
 const reTypePassword = "******";
-const login = "Login in";
+const login = "LogIn";
 const signup = "Sign Up";
 const createNewAccount = "or, create a new account";
 const loginWith = "Log in with";
 const privacyPolicy = "Privacy Policy";
 const termAndCond = "Terms and Conditions";
-const alreadyAcoount = "Already Have an Account?";
+const alreadyAccount = "Already Have an Account?";
 
 const home = "Home", categories = "Categories", cart = "Cart", account = "Account";
+const searchAnything = "Search AnyThing...", todayDeal = "Today's Deal", flashsale = "FLash Sale", topBrand = "Top Sellers", brand = "Brand", topCategories = "Top Categories", featuredCategories = "Featured Categories";
