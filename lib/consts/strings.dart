@@ -16,3 +16,19 @@ const privacyPolicy = "Privacy Policy";
 const termAndCond = "Terms and Conditions";
 const alreadyAcoount = "Already Have an Account?";
 
+const home = "Home",
+    categories = "Categories",
+    cart = "cart",
+    account = "Account";
+
+//home screen strings
+
+const searchanything = "Search anything..",
+    todayDeal = "Today's Deal",
+    flashsale = "Flash Sale",
+    topSellers = "Top SELLERS",
+    brand = "Brand",
+    womenDress = "Women Dress",
+    girlsDress = "Girls dress",
+    featuredProduct = "Featured Product",
+    featuredCategories = "Featured Categories";
