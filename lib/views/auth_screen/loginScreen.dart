@@ -1,6 +1,7 @@
 import 'package:my_app/consts/consts.dart';
 import 'package:my_app/consts/lists.dart';
 import 'package:my_app/views/auth_screen/signUp.dart';
+import 'package:my_app/views/home_screen/home.dart';
 import 'package:my_app/widgets_common/applogo_widget.dart';
 import 'package:my_app/widgets_common/bg_widget.dart';
 import 'package:my_app/widgets_common/customTextfield.dart';
@@ -27,7 +28,9 @@ class LoginScreen extends StatelessWidget {
                 customTextField(password, passwordHint),
                 5.heightBox,
                 // ourButton().box.width(context.screenWidth - 50).make(),
-                ourButton(color: redColor, title: login, textColor: whiteColor, onPress: (){}).box.width(context.screenWidth - 50).make(),
+                ourButton(color: redColor, title: login, textColor: whiteColor, onPress: (){
+                  Get.to(()=> const Home());
+                }).box.width(context.screenWidth - 50).make(),
                 5.heightBox,
                 createNewAccount.text.color(fontGrey).make(),
                 5.heightBox,
