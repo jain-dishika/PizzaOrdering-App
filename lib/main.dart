@@ -12,6 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Pizza Ordering App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // debugShowCheckedModeBanner: false,
         scaffoldBackgroundColor: Colors.transparent,

@@ -22,6 +22,9 @@
 // another feature
 
 // 20.heightBox,
+// import 'dart:ffi';
+
+// import 'package:flutter/rendering.dart';
 // import 'package:my_app/consts/consts.dart';
 
 // Container(
@@ -33,16 +36,20 @@
 //     children: [
 //       featuredProduct.text.white.fontFamily(bold).size(18).make();
 //       10.HeightBox,
-//       Row(
+//       SingleChildScrollView(
+//         ScrollDirection: Axis.horizantal,
+//         child: Row(
 //         children: List.generate(6, (index) =>Column(
+//           CrossAxisAlignment: CrossAxisAlignment.start,
 //           children: [
 //             Image.asset(imgP1,width:150,fit:BoxFit.cover,),
 //             10.HeightBox,
 //             "Laptop".text.fontFamily(semibold).color(lightGrey).make()
-
+//             10.heightBox,
+//             "\$600".text.Color(redColor).fontFamily(bold).size(16).make()
 //           ],
-//         ).box.white.rounded.padding(const EdgeInsets.all(9)).make())
-//       )
+//         ).box.white.margin(const EdgeInsets.symmetric(horizontal: 4)).rounded.padding(const EdgeInsets.all(9)).make())
+//       ))
 
 //     ],
 //   )
