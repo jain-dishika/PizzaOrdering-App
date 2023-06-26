@@ -39,3 +39,5 @@ const searchanything = "Search anything..",
 // pizzaa size regular,medium,large
 const womenClothing = "Women clothing",
     menClothingFashion = "Men clothing and fashion";
+
+const logout = "Logout";
