@@ -16,5 +16,28 @@ const privacyPolicy = "Privacy Policy";
 const termAndCond = "Terms and Conditions";
 const alreadyAccount = "Already Have an Account?";
 
-const home = "Home", categories = "Categories", cart = "Cart", account = "Account";
-const searchAnything = "Search AnyThing...", todayDeal = "Today's Deal", flashsale = "FLash Sale", topBrand = "Top Sellers", brand = "Brand", topCategories = "Top Categories", featuredCategories = "Featured Categories";
+const home = "Home",
+    categories = "Categories",
+    cart = "cart",
+    account = "Account";
+
+//home screen strings
+
+const searchanything = "Search anything..",
+    todayDeal = "Today's Deal",
+    flashsale = "Flash Sale",
+    topSellers = "Top SELLERS",
+    brand = "Brand",
+    womenDress = "Women Dress",
+    girlsDress = "Girls dress",
+    featuredProduct = "Featured Product",
+    topCategories = "Top categories",
+    featuredCategories = "Featured Categories";
+
+//category strings
+
+// pizzaa size regular,medium,large
+const womenClothing = "Women clothing",
+    menClothingFashion = "Men clothing and fashion";
+
+const logout = "Logout";

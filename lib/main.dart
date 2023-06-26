@@ -12,10 +12,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       title: 'Pizza Ordering App',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         // debugShowCheckedModeBanner: false,
         scaffoldBackgroundColor: Colors.transparent,
-        appBarTheme: const AppBarTheme(backgroundColor: Colors.transparent),
+        appBarTheme: const AppBarTheme(
+          // to set app bar icons color
+          iconTheme: IconThemeData(
+            color: darkFontGrey,
+          ),
+          backgroundColor: Colors.transparent),
         fontFamily: regular,
       ),
       home: const SplashScreen(),
