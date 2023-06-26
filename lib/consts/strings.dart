@@ -31,6 +31,7 @@ const searchanything = "Search anything..",
     womenDress = "Women Dress",
     girlsDress = "Girls dress",
     featuredProduct = "Featured Product",
+    topCategories = "Top categories",
     featuredCategories = "Featured Categories";
 
 //category strings
