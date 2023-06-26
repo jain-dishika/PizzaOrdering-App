@@ -61,9 +61,9 @@ class CategoryDetails extends StatelessWidget {
                         children: [
                           Image.asset(
                             imgP1,
-                            height: 200,
+                            height: 150,
                             width: 150,
-                            fit: BoxFit.cover,
+                            fit: BoxFit.fill,
                           ),
                           "Laptop"
                               .text
