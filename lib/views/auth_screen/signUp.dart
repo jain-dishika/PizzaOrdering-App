@@ -75,7 +75,7 @@ class _SignupScreenState extends State<SignUpScreen>{
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    alreadyAcoount.text.color(fontGrey).make(),
+                    alreadyAccount.text.color(fontGrey).make(),
                     login.text.color(redColor).make().onTap((){
                       Get.back();
                     })

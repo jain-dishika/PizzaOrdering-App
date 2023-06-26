@@ -8,13 +8,13 @@ const emailHint = "admin@admin.com";
 const password = "Password";
 const passwordHint = "******";
 const reTypePassword = "******";
-const login = "Login in";
+const login = "LogIn";
 const signup = "Sign Up";
 const createNewAccount = "or, create a new account";
 const loginWith = "Log in with";
 const privacyPolicy = "Privacy Policy";
 const termAndCond = "Terms and Conditions";
-const alreadyAcoount = "Already Have an Account?";
+const alreadyAccount = "Already Have an Account?";
 
 const home = "Home",
     categories = "Categories",
@@ -32,3 +32,9 @@ const searchanything = "Search anything..",
     girlsDress = "Girls dress",
     featuredProduct = "Featured Product",
     featuredCategories = "Featured Categories";
+
+//category strings
+
+// pizzaa size regular,medium,large
+const womenClothing = "Women clothing",
+    menClothingFashion = "Men clothing and fashion";
