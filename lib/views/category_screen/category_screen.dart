@@ -15,13 +15,13 @@ class CategoryScreen extends StatelessWidget {
               title: categories.text.fontFamily(bold).white.make(),
             ),
             body: Container(
-              padding: EdgeInsets.all(12),
+              padding: const EdgeInsets.all(20),
               child: GridView.builder(
                   shrinkWrap: true,
-                  itemCount: 9,
-                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                      crossAxisCount: 3,
-                      mainAxisSpacing: 8,
+                  itemCount: 6,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      mainAxisSpacing: 20,
                       mainAxisExtent: 200,
                       crossAxisSpacing: 8),
                   itemBuilder: (context, index) {
@@ -36,6 +36,7 @@ class CategoryScreen extends StatelessWidget {
                         10.heightBox,
                         categoriesList[index]
                             .text
+                            .size(15)
                             .color(darkFontGrey)
                             .align(TextAlign.center)
                             .make()

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:my_app/consts/lists.dart';
 import 'package:my_app/views/category_screen/items_details.dart';
 import 'package:my_app/widgets_common/bg_widget.dart';
 import 'package:my_app/consts/consts.dart';
@@ -15,7 +16,7 @@ class CategoryDetails extends StatelessWidget {
         title: title!.text.fontFamily(bold).white.make(),
       ),
       body: Container(
-        padding: EdgeInsets.all(12),
+        padding: const EdgeInsets.all(12),
         child: Column(
           children: [
             SingleChildScrollView(
@@ -24,22 +25,22 @@ class CategoryDetails extends StatelessWidget {
               child: Row(
                   children: List.generate(
                       6,
-                      (index) => "Baby clothing"
+                      (index) => categoriesList[index]
                           .text
-                          .size(12)
-                          .fontFamily(semibold)
+                          .size(15)
+                          .fontFamily(bold)
                           .color(darkFontGrey)
                           .makeCentered()
                           .box
                           .white
                           .rounded
-                          .size(150, 100)
-                          .margin(EdgeInsets.symmetric(horizontal: 4))
+                          .size(150, 60)
+                          .margin(const EdgeInsets.symmetric(horizontal: 4))
                           .make())),
             ),
 
             // items container
-            20.heightBox,
+            30.heightBox,
 
             Expanded(
                 // child: Container(
@@ -60,22 +61,18 @@ class CategoryDetails extends StatelessWidget {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Image.asset(
-                            imgP1,
+                            imgFc3,
                             height: 150,
                             width: 150,
                             fit: BoxFit.fill,
                           ),
-                          "Laptop"
-                              .text
-                              .fontFamily(semibold)
-                              .color(lightGrey)
-                              .make(),
+                          "Pizza".text.fontFamily(semibold).make(),
                           10.heightBox,
-                          "\$600"
+                          "\Rs.250"
                               .text
-                              .color(redColor)
+                              .color(golden)
                               .fontFamily(bold)
-                              .size(16)
+                              .size(14)
                               .make()
                         ],
                       )
