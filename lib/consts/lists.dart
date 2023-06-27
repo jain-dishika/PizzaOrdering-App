@@ -14,3 +14,6 @@ const categoriesImages = [imgFc1, imgFc2];
 
 const slidersList = [imgSlider1, imgSlider2, imgSlider3, imgSlider4];
 const secondSlidersList = [imgSs1, imgSs2, imgSs3, imgSs4];
+
+const profileButtonsList = [orders, wishList, messages];
+const profileButtonsIcon = [icOrder, icOrder, icMessages];

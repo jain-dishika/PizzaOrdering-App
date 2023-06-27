@@ -1,8 +1,17 @@
 import 'package:my_app/views/splash_dart/splash_screen.dart';
 import 'package:my_app/consts/consts.dart';
 
-void main() {
-  runApp(const MyApp());
+void main() async{
+    WidgetsFlutterBinding.ensureInitialized();
+    await Firebase.initializeApp(
+      options: const FirebaseOptions(
+      apiKey: "AIzaSyDNH7IJPYWMai2i5DcHONo3h_YDS8oBJno",
+      appId: "1:820407976462:android:77c190e0dc92855729725f",
+      messagingSenderId: "820407976462",
+      projectId: "pizza-order-5fa77",
+    ),
+    );
+    runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {

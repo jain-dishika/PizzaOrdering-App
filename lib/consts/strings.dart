@@ -13,6 +13,8 @@ const signup = "Sign Up";
 const createNewAccount = "or, create a new account";
 const loginWith = "Log in with";
 const privacyPolicy = "Privacy Policy";
+const loggedIn = "Logged In SuccesFully";
+const loggedOut = "Logged Out SuccesFully";
 const termAndCond = "Terms and Conditions";
 const alreadyAccount = "Already Have an Account?";
 
@@ -41,3 +43,6 @@ const womenClothing = "Women clothing",
     menClothingFashion = "Men clothing and fashion";
 
 const logout = "Logout";
+
+//profile Strings
+const wishList = "My WishList", orders = "My Orders", messages = "Messages";
