@@ -38,8 +38,8 @@ class Home extends StatelessWidget {
       bottomNavigationBar: Obx(
         () => BottomNavigationBar(
           currentIndex: controller.currentNavIndex.value,
-          selectedItemColor: redColor,
-          selectedLabelStyle: const TextStyle(fontFamily: semibold),
+          selectedItemColor: golden,
+          selectedLabelStyle: const TextStyle(fontFamily: bold),
           type: BottomNavigationBarType.fixed,
           backgroundColor: whiteColor,
           items: navbarItem,
