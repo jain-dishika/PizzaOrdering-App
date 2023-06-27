@@ -25,19 +25,25 @@ const home = "Home",
 
 const searchanything = "Search anything..",
     todayDeal = "Today's Deal",
-    flashsale = "Flash Sale",
+    flashsale = "Offers",
     topSellers = "Top SELLERS",
     brand = "Brand",
-    womenDress = "Women Dress",
-    girlsDress = "Girls dress",
-    featuredProduct = "Featured Product",
+    womenDress = "Pizzas",
+    girlsDress = "Sides",
+    personalSlice = "Personal Slice",
+    garlicBread = "Garlic Bread",
+    featuredProduct = "Treding Items",
     topCategories = "Top categories",
-    featuredCategories = "Featured Categories";
+    featuredCategories = "Explore Menu";
 
 //category strings
 
 // pizzaa size regular,medium,large
-const womenClothing = "Women clothing",
-    menClothingFashion = "Men clothing and fashion";
+const personalSlices = "Personal Slice",
+    regularPizza = "Regular Pizza",
+    mediumPizza = "Medium Pizza",
+    large = "Large Veg pizza ",
+    giant ="Giant Veg Pizza",
+    monster = "Monster Veg Pizza";
 
 const logout = "Logout";

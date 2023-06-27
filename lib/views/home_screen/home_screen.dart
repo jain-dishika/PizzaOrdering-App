@@ -194,24 +194,24 @@ class HomeScreen extends StatelessWidget {
 
                       // another feature
                       20.heightBox,
-                      VxSwiper.builder(
-                          aspectRatio: 16 / 9,
-                          autoPlay: true,
-                          height: 150,
-                          enlargeCenterPage: true,
-                          itemCount: secondSlidersList.length,
-                          itemBuilder: (context, index) {
-                            return Image.asset(
-                              secondSlidersList[index],
-                              fit: BoxFit.fill,
-                            )
-                                .box
-                                .rounded
-                                .clip(Clip.antiAlias)
-                                .margin(
-                                    const EdgeInsets.symmetric(horizontal: 8))
-                                .make();
-                          }),
+                      // VxSwiper.builder(
+                      //     aspectRatio: 16 / 9,
+                      //     autoPlay: true,
+                      //     height: 150,
+                      //     enlargeCenterPage: true,
+                      //     itemCount: secondSlidersList.length,
+                      //     itemBuilder: (context, index) {
+                      //       return Image.asset(
+                      //         secondSlidersList[index],
+                      //         fit: BoxFit.fill,
+                      //       )
+                      //           .box
+                      //           .rounded
+                      //           .clip(Clip.antiAlias)
+                      //           .margin(
+                      //               const EdgeInsets.symmetric(horizontal: 8))
+                      //           .make();
+                      //     }),
 
                       // all product section
                       20.heightBox,
