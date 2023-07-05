@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:my_app/consts/consts.dart';
@@ -38,7 +36,11 @@ class AuthController extends GetxController{
       'name' : name,
       'password' : password,
       'email' : email,
-      'imageUrl' : ''
+      'imageUrl' : '',
+      "id" : currentUser!.uid,
+      "cart_count" : "00",
+      "order_count" : "00",
+      "wishList_count" : "00"
     });
   }
   //signout method

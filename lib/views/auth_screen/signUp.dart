@@ -1,13 +1,11 @@
-import 'dart:html';
-
 import '../../consts/consts.dart';
-import '../../consts/lists.dart';
 import '../../widgets_common/bg_widget.dart';
 import '../../widgets_common/applogo_widget.dart';
 import '../../widgets_common/customTextfield.dart';
 import '../../widgets_common/ourButton.dart';
 import 'package:my_app/controllers/auth_controller.dart';
 import 'package:my_app/views/home_screen/home.dart';
+
 class SignUpScreen extends StatefulWidget {
   const SignUpScreen({super.key});
 
@@ -42,8 +40,7 @@ class _SignupScreenState extends State<SignUpScreen>{
                 customTextField(name, nameHint, nameController, false),
                 customTextField(email, emailHint, emailController, false),
                 customTextField(password, passwordHint, passwordController, true),
-                customTextField(password, reTypePassword, passwordreTypeController, true),
-
+                customTextField(reTypePassword, passwordHint, passwordreTypeController, true),
                 Row(
                   children: [
                     Checkbox(checkColor: redColor, value: isCheck, onChanged: (newValue){

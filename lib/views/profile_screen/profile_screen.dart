@@ -1,9 +1,11 @@
 import 'package:my_app/consts/consts.dart';
+import 'package:my_app/widgets_common/bg_widget.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:my_app/services/firestore_services.dart';
 import 'package:my_app/consts/lists.dart';
 import 'package:my_app/controllers/auth_controller.dart';
 import 'package:my_app/views/auth_screen/loginScreen.dart';
 import 'package:my_app/views/profile_screen/Components/details_card.dart';
-import 'package:my_app/widgets_common/bg_widget.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -12,7 +14,20 @@ class ProfileScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return bgWidget(
         child: Scaffold(
-      body: SafeArea(
+      body: StreamBuilder(
+        stream: FirestoreServices.getUser(currentUser!.uid),
+        builder: (BuildContext context,AsyncSnapshot<QuerySnapshot> snapshot){
+          
+          if(!snapshot.hasData){
+            return const Center(child: CircularProgressIndicator(
+              valueColor: AlwaysStoppedAnimation(redColor),
+            ),
+            );
+          }
+          else{
+
+            var data = snapshot.data!.docs[0];
+            return SafeArea(
          
         // padding: const EdgeInsets.all(6),
         child: Column(
@@ -38,8 +53,8 @@ class ProfileScreen extends StatelessWidget {
                     child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    "Dummy user".text.fontFamily(semibold).white.make(),
-                    "customer@example.com".text.white.make(),
+                    "${data['name']}".text.fontFamily(semibold).white.make(),
+                    "${data['email']}".text.white.make(),
                   ],
                 )),
                 OutlinedButton(
@@ -61,9 +76,9 @@ class ProfileScreen extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-              detailsCard(count: "00", title: "in your cart", width: context.screenWidth/3.4),
-              detailsCard(count: "32", title: "in your wishList", width: context.screenWidth/3.2),
-              detailsCard(count: "675", title: "in your orders", width: context.screenWidth/3.2),
+              detailsCard(count: data['cart_count'], title: "in your cart", width: context.screenWidth/3.4),
+              detailsCard(count: data['wishList_count'], title: "in your wishList", width: context.screenWidth/3.2),
+              detailsCard(count: data['order_count'], title: "in your orders", width: context.screenWidth/3.2),
             ],),
 
             ListView.separated(
@@ -83,7 +98,10 @@ class ProfileScreen extends StatelessWidget {
             ).box.white.rounded.margin(const EdgeInsets.all(12)).padding(const EdgeInsets.symmetric(horizontal: 16)).shadowSm.make().box.color(redColor).make(),
           ],
         ),
-      ),
-    ));
+      );
+          }
+        },
+      )
+    ),);
   }
 }

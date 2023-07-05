@@ -1,13 +1,13 @@
-const appname = "PizzaOrdering";
+const appname = "10PI";
 const appversion = "Version 1.0.0";
 const credits = "@Coders_MD";
 const email = "Email";
 const name = "Name";
-const nameHint = "Dishika";
+const nameHint = "Name";
 const emailHint = "admin@admin.com";
 const password = "Password";
 const passwordHint = "******";
-const reTypePassword = "******";
+const reTypePassword = "Confirm Password";
 const login = "Log In";
 const signup = "Sign Up";
 const createNewAccount = "or, Create a new account";
